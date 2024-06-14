@@ -9,4 +9,4 @@
 
 module load Anaconda3/2024.02-1
 conda activate regenie_env
-regenie --step 2 --bed c1_22_regenie --phenoFile ../all.phenos --covarFile ../traits/covars_100K.txt --pred ukb_step1_sim_pred.list --bsize 400 \
+regenie --step 2 --bed c1_22_regenie --phenoFile ../all.phenos --covarFile ../traits/covars_100K.txt --pred ukb_step1_sim_pred.list --bsize 400 
