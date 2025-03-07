@@ -16,6 +16,5 @@ regenie --step 1
         --keep qc/qc_pass.id 
         --phenoFile ../../phenotypes/norm_pheno_aao.txt 
         --covarFile ../../output/after_pca_wbi/makeCovar/qcovars7.txt 
-        --interaction age
         --qt --bsize 1000 --lowmem --lowmem-prefix tmpdir/regenie_tmp_preds 
         --out step1/test_step1_B
