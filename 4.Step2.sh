@@ -10,9 +10,12 @@
 module load Anaconda3/2024.02-1
 conda activate regenie_env
 regenie --step 2 
-        --bed c1_22_regenie 
+        --bgen c1_22_regenie.bgen 
         --phenoFile ../all.phenos 
         --covarFile ../traits/covars_100K.txt 
+        --qt
+        --firth --approx      #firth is if we have given a binary trait. It will not work in the case of continuous variable  
         --interaction age
-        --pred ukb_step1_sim_pred.list 
+        --pred ../step1/ukb_step1_sim_pred.list 
         --bsize 400 
+        --out test_bin_out
