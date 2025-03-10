@@ -10,7 +10,7 @@
 module load Anaconda3/2024.02-1
 conda activate regenie_env
 
-regenie --step 1 
+regenie --step 1 --force-step1
         --bed c1_22_regenie 
         --extract qc/qc_pass.snplist 
         --keep qc/qc_pass.id 
