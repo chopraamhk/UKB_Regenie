@@ -14,7 +14,7 @@ regenie --step 2
         --phenoFile ../all.phenos 
         --covarFile ../traits/covars_100K.txt 
         --qt
-        --firth --approx      #firth is if we have given a binary trait. It will not work in the case of continuous variable  
+#       --firth --approx      #firth is if we have given a binary trait. It will not work in the case of a continuous variable, and we havea  continuous variable - age :D 
         --interaction age
         --pred ../step1/ukb_step1_sim_pred.list 
         --bsize 400 
