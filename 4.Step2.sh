@@ -19,3 +19,6 @@ regenie --step 2
         --pred ../step1/ukb_step1_sim_pred.list 
         --bsize 400 
         --out test_bin_out
+
+
+{ for f in out_*_AAo_distensibility.regenie; do tail -n +2 "$f"; done; } > 1_22_all.regenie
