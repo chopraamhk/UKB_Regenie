@@ -22,3 +22,7 @@ regenie --step 2
 
 
 { for f in out_*_AAo_distensibility.regenie; do tail -n +2 "$f"; done; } > 1_22_all.regenie
+
+
+awk -F'\t' -v col=13 'BEGIN {OFS="\t"} NR==1 {print $0, "agec" col} NR>1 {print $0, 54.85 - $col}' bolt_covars.txt > bolt_covars_agec.txt
+
